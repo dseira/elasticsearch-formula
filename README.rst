@@ -1,7 +1,7 @@
 Elasticsearch
 =============
 
-Formula to install and configure Elasticsearch. Supports 2.x and 5.x.
+Formula to install and configure Elasticsearch. Supports 2.x , 5.x and 6.x.
 
 
 .. note::
@@ -53,6 +53,15 @@ Configures defaults/sysconfig env vars for the Elasticsearch service.
 
 Allows configuration of elasticsearch plugins.
 
+``elasticsearch.tools``
+-----------------------
+
+Install usefull tools for manage/visualize elasticsearch nodes (see `pillar.example` for configuration options):
+
+- curator
+- cerebro
+
+Supported OS are Ubuntu 16/18 and CentOS 7.
 
 Notes
 =====

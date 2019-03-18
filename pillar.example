@@ -23,3 +23,12 @@ elasticsearch:
   plugins:
     lang-python: lang-python
     kopf: lmenezes/elasticsearch-kopf
+  tools:
+    curator:
+      enabled: true
+    cerebro:
+      enabled: true
+        config:                # If not set, it will use the
+          version: 0.8.1       # default above settings
+          http.port: 9000
+          http.address: 0.0.0.0

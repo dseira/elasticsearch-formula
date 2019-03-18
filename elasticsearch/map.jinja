@@ -3,6 +3,12 @@
         'pkg': 'elasticsearch',
         'use_repo': True,
     },
+    'RedHat': {
+        'pip_pkg': 'python2-pip',
+    },
+    'Debian': {
+        'pip_pkg': 'python-pip',
+    }
 },
 merge=salt['pillar.get']('elasticsearch', {}),
 default='default')
